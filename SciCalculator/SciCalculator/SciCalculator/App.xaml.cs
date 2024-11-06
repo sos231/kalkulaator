@@ -4,6 +4,8 @@ using Microsoft.UI.Windowing;
 using Windows.Graphics;
 #endif
 
+using Views;
+
 namespace SciCalculator
 {
     public partial class App : Application
@@ -28,7 +30,7 @@ namespace SciCalculator
         });
 #endif
 
-            MainPage = new AppShell();
+            MainPage = new CalculatorPage();
         }
     }
 }
