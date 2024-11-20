@@ -73,5 +73,24 @@
 
         </Grid>
         
+        <!--Scientific Operators-->
+        
+        <!--Row 1-->
+        <Button 
+            Grid.Row="2"
+            Grid.Column="0"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="MEAN" />
+        
+        <Button 
+            Grid.Row="2"
+            Grid.Column="1"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="MOD" />
+
     </Grid>
 </ContentPage>
