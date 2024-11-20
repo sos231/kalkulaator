@@ -41,6 +41,7 @@ namespace ViewModels
                 var inputString = NormalizeInputString();
                 var expresson = new NCalc.Expression(inputString);
                 var result = expresson.Evaluate();
+                CalculatedResult = result.ToString(); 
             }
             catch (Exception ex)
             {
@@ -81,7 +82,7 @@ namespace ViewModels
         [RelayCommand]
         private void Backspace()
         {
-            if (InputText.Length > null)
+            if (InputText.Length > 0)
             {
                 InputText = InputText.Substring(0, InputText.Length - 1);
             }
